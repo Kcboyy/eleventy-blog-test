@@ -6,4 +6,4 @@ eleventyNavigation:
 ---
 # About Me
 
-I am a person that writes stuff.
+Hey, I'm Casey Newcombe and I'm a front-end web developer based in the UK. I'm always curious to learn more about new technologies and creative coding!
