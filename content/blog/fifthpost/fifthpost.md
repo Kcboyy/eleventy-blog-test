@@ -1,5 +1,5 @@
 ---
-title: HTML for Begineers
+title: HTML for Beginners
 date: 2023-07-21
 draft: true
 ---
