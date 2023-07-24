@@ -4,12 +4,27 @@
 	<subtitle>I am writing about my experiences as a Web Developer.</subtitle>
 	<link href="http://localhost:8080/feed/feed.xml" rel="self"/>
 	<link href="http://localhost:8080/"/>
-	<updated>2018-09-30T00:00:00Z</updated>
+	<updated>2023-07-21T00:00:00Z</updated>
 	<id>http://localhost:8080/</id>
 	<author>
 		<name>Casey Newcombe</name>
 		<email>newco31@hotmail.com</email>
 	</author>
+	
+	<entry>
+		<title>HTML for Beginners</title>
+		<link href="http://localhost:8080/blog/fifthpost/"/>
+		<updated>2023-07-21T00:00:00Z</updated>
+		<id>http://localhost:8080/blog/fifthpost/</id>
+		<content type="html">&lt;p&gt;HTML, short for HyperText Markup Language, is the core language of the World Wide Web. It defines the content and basic structure of web pages and web applications. First published by Tim Berners-Lee in 1989, HTML is now used by 94% of all websites, and probably all the ones you visit. But what is it, exactly?&lt;/p&gt;
+&lt;p&gt;“HyperText” is text on a web page that contains references to another web page. You probably know these as hyperlinks. We use hyperlinks to jump to another section of the same page, a different page on the current website, or a completely new website. Hyperlinks can also open a PDF, email, or multimedia, like a video or audio file.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;http://localhost:8080/img/1mcKp5T92T-500.avif 500w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;http://localhost:8080/img/1mcKp5T92T-500.webp 500w&quot;&gt;&lt;img alt=&quot;A picture of the HTML5 logo&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;http://localhost:8080/img/1mcKp5T92T-500.png&quot; width=&quot;500&quot; height=&quot;600&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/blog/fifthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Linking information together in this way was a revolutionary step in building the web. Together, HTML and the internet make it possible for anyone to access all types of information around the world, in any order they want.&lt;/p&gt;
+&lt;p&gt;Moving on, “Markup” refers to how HTML “marks up” the page with annotations within the HTML file. These annotations are not displayed on the web page itself. Instead, they work behind-the-scenes telling the browser how to display the document to visitors. We&#39;ll learn more about this markup soon.&lt;/p&gt;
+&lt;p&gt;Finally, “Language” is the simplest part of the acronym to understand. Like any language, HTML has a unique syntax and alphabet. But what kind of language is it, exactly? Let’s tackle this question on my next blog coming soon!&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>This is my fourth post.</title>

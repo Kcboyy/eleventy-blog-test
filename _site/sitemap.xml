@@ -22,6 +22,11 @@
 	</url>
 	
 	<url>
+		<loc>http://localhost:8080/blog/fifthpost/</loc>
+		<lastmod>2023-07-21</lastmod>
+	</url>
+	
+	<url>
 		<loc>http://localhost:8080/about/</loc>
 		<lastmod>2023-07-21</lastmod>
 	</url>
