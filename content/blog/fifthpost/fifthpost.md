@@ -2,11 +2,13 @@
 title: HTML for Beginners
 description: A new blog post discussing the basics of HTML.
 date: 2023-07-21
-draft: true
+
 ---
 HTML, short for HyperText Markup Language, is the core language of the World Wide Web. It defines the content and basic structure of web pages and web applications. First published by Tim Berners-Lee in 1989, HTML is now used by 94% of all websites, and probably all the ones you visit. But what is it, exactly?
 
 “HyperText” is text on a web page that contains references to another web page. You probably know these as hyperlinks. We use hyperlinks to jump to another section of the same page, a different page on the current website, or a completely new website. Hyperlinks can also open a PDF, email, or multimedia, like a video or audio file.
+
+{% image "./html5.png", "A picture of the HTML5 logo" %}
 
 ## Section Header
 
