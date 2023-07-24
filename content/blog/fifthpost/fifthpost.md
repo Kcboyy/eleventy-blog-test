@@ -8,8 +8,6 @@ HTML, short for HyperText Markup Language, is the core language of the World Wid
 
 “HyperText” is text on a web page that contains references to another web page. You probably know these as hyperlinks. We use hyperlinks to jump to another section of the same page, a different page on the current website, or a completely new website. Hyperlinks can also open a PDF, email, or multimedia, like a video or audio file.
 
-{% image "./html5.png", "A picture of the HTML5 logo" %}
-
 ## Section Header
 
 Linking information together in this way was a revolutionary step in building the web. Together, HTML and the internet make it possible for anyone to access all types of information around the world, in any order they want.
