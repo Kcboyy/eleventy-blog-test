@@ -47,6 +47,11 @@
 	</url>
 	
 	<url>
+		<loc>http://localhost:8080/tags/another-tag/</loc>
+		<lastmod>2023-07-21</lastmod>
+	</url>
+	
+	<url>
 		<loc>http://localhost:8080/tags/number-2/</loc>
 		<lastmod>2023-07-21</lastmod>
 	</url>
@@ -58,11 +63,6 @@
 	
 	<url>
 		<loc>http://localhost:8080/tags/posts-with-two-tags/</loc>
-		<lastmod>2023-07-21</lastmod>
-	</url>
-	
-	<url>
-		<loc>http://localhost:8080/tags/another-tag/</loc>
 		<lastmod>2023-07-21</lastmod>
 	</url>
 	
