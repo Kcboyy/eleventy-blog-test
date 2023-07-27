@@ -7,6 +7,9 @@
 		<meta name="description" content="I am writing about my experiences as a Web Developer.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="In the life of a Web Developer - Casey Newcombe">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="In the life of a Web Developer - Casey Newcombe">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 		
 		<style>.postlist { counter-reset: start-from 3 }
 * { box-sizing: border-box; }
@@ -322,6 +325,29 @@ h2 + .header-anchor {
 <p>See <a href="/tags/">all tags</a>.</p>
 
 
+			<button onclick="topFunction()" class="btn btn-primary" title="Go to top">Top</button>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementByClassName("btn btn-primary");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+        }
+
+       // When the user clicks on the button, scroll to the top of the document
+       function topFunction() {
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+       }
+   </script>
 		</main>
 
 		<footer></footer>

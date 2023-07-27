@@ -27,47 +27,47 @@
 	</url>
 	
 	<url>
-		<loc>http://localhost:8080/about/</loc>
-		<lastmod>2023-07-21</lastmod>
-	</url>
-	
-	<url>
 		<loc>http://localhost:8080/blog/</loc>
-		<lastmod>2023-07-21</lastmod>
+		<lastmod>2023-07-24</lastmod>
 	</url>
 	
 	<url>
 		<loc>http://localhost:8080/</loc>
-		<lastmod>2023-07-21</lastmod>
+		<lastmod>2023-07-24</lastmod>
 	</url>
 	
 	<url>
 		<loc>http://localhost:8080/tags/</loc>
-		<lastmod>2023-07-21</lastmod>
+		<lastmod>2023-07-24</lastmod>
 	</url>
 	
 	<url>
 		<loc>http://localhost:8080/tags/another-tag/</loc>
-		<lastmod>2023-07-21</lastmod>
+		<lastmod>2023-07-24</lastmod>
 	</url>
 	
 	<url>
 		<loc>http://localhost:8080/tags/number-2/</loc>
-		<lastmod>2023-07-21</lastmod>
+		<lastmod>2023-07-24</lastmod>
 	</url>
 	
 	<url>
 		<loc>http://localhost:8080/tags/second-tag/</loc>
-		<lastmod>2023-07-21</lastmod>
+		<lastmod>2023-07-24</lastmod>
 	</url>
 	
 	<url>
 		<loc>http://localhost:8080/tags/posts-with-two-tags/</loc>
-		<lastmod>2023-07-21</lastmod>
+		<lastmod>2023-07-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>http://localhost:8080/about/</loc>
+		<lastmod>2023-07-24</lastmod>
 	</url>
 	
 	<url>
 		<loc>http://localhost:8080/contact/</loc>
-		<lastmod>2023-07-21</lastmod>
+		<lastmod>2023-07-24</lastmod>
 	</url>
 </urlset>
