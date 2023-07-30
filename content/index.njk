@@ -1,28 +1,219 @@
----
-layout: layouts/home.njk
-eleventyNavigation:
-  key: Home
-  order: 1
-numberOfLatestPostsToShow: 3
----
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casey Newcombe - Web Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>  
+    <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Logo Here</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./About/">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./Blog/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./Contact/">Contact</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
-{% include "postslist.njk" %}
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="http://fakeimg.pl/2000x400/4169E1/fff/?text=Web Development" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="http://fakeimg.pl/2000x400/0000FF/fff/?text=Web Design" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="http://fakeimg.pl/2000x400/000080/fff/?text=Mobile App Development" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
-{% endif %}
+</header>
 
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}
+<!-- Bootstrap Grid System -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-6 col-lg-4" style="background-color:lightgrey;"><h2>Completed Projects</h2></div>
+    <div class="col-sm-9 col-md-6 col-lg-8"><h2>About Me.</h2></div>  
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3 col-md-6 col-lg-4" style="background-color:lightgrey;"><h5>Recent:</h5>
+    <ul>
+    <li>Band table project</li>
+    <li>Artic Monkeys website design & development</li>
+    </ul>
+    </div>
+  
+
+    <div class="col-sm-3 col-md-6 col-lg-4"><h5>My name is Casey Newcombe - please see my services listed below:</h5>
+    <ul>
+      <li>Web Development</li>
+      <li>Web Design</li>
+      <li>Mobile App Development</li>
+    <p>To learn more about my services - click learn more</p>
+    </ul>
+    <!--Button to About-->
+    <a href="/Services/" class="about-button">Learn More ></a>
+    <br></br>
+    <main id="skip">
+			{{ content | safe }}
+			<button onclick="topFunction()" class="btn btn-primary" title="Go to top">Top</button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementByClassName("btn btn-primary");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+        }
+
+       // When the user clicks on the button, scroll to the top of the document
+       function topFunction() {
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+       }
+   </script>
+		</main>
+    </div>
+  
+  
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #3f51b5">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Links -->
+      <section class="mt-5">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">About us</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Services</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Help</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Contact</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-5" />
+
+      <!-- Section: Text -->
+      <section class="mb-5">
+ 
+      </section>
+      <!-- Section: Text -->
+
+      <!-- Section: Social -->
+      <section class="text-center mb-5">
+        <a href="" class="text-white me-4">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fa fa-github"></i>
+        </a>
+      </section>
+      <!-- Section: Social -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      &copy Casey Newcombe 2023
+      <a class="text-white" href="https://mdbootstrap.com/"
+         ></a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+
+</footer>
+</body>
+</html>
