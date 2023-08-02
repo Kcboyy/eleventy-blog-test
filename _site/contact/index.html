@@ -24,7 +24,7 @@
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
 
-	--background-color: #fff;
+	--background-color: powderblue;
 
 	--text-color: var(--color-gray-90);
 	--text-color-link: #082840;
@@ -304,7 +304,24 @@ h2 + .header-anchor {
 <p>Please click on the link below which will direct you to the contact form.</p>
 <p>Thanks for visiting!</p>
 <p><a href="https://kcboyy.github.io/Portfolio/contact.html">Contact Form</a></p>
-
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>First Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Surname: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+<br>
 			<button onclick="topFunction()" class="btn btn-primary" title="Go to top">Top</button>
 
     <script>
