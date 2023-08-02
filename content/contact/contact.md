@@ -6,11 +6,7 @@ eleventyNavigation:
 ---
 # Contact Me
 
-Please click on the link below which will direct you to the contact form.
-
-Thanks for visiting!
-
-<a href="https://kcboyy.github.io/Portfolio/contact.html">Contact Form</a>  
+Please fill in the form below and we will get back to you shortly.
 
 <form name="contact" method="POST" data-netlify="true">
   <p>
@@ -31,3 +27,5 @@ Thanks for visiting!
   </p>
 </form>
 <br>
+
+Thanks for visiting!
