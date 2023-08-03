@@ -10,22 +10,27 @@ Please fill in the form below and we will get back to you shortly.
 
 <form name="contact" method="POST" data-netlify="true">
   <p>
-    <label>First Name: <input type="text" name="name" /></label>
+    <label><b>First Name:</b><br><input type="text" name="name" placeholder="Enter first name" /></label>
   </p>
   <p>
-    <label>Surname: <input type="text" name="name" /></label>
+    <label><b>Surname:</b><br><input type="text" name="name" placeholder="Enter surname"/></label>
   </p>
   <p>
-    <label>Your Email: <input type="email" name="email" /></label>
+    <label><b>Your Email:</b><br><input type="email" name="email" placeholder="Enter email"/></label>
+    <br><small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </p>
-  
+    
   <p>
-    <label>Message: <textarea name="message"></textarea></label>
+    <label><b>Message:</b><br><textarea name="message" placeholder="Your message"></textarea></label>
   </p>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">I have read and agreed to the <span style="color:blue;font-weight:bold">Terms & Conditions</span></label>
+  </div>
   <p>
     <button type="submit">Send</button>
   </p>
 </form>
 <br>
 
-Thanks for visiting!
+<i><b>Thanks for visiting!
