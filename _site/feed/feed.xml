@@ -4,12 +4,23 @@
 	<subtitle>I am writing about my experiences as a Web Developer.</subtitle>
 	<link href="http://localhost:8080/feed/feed.xml" rel="self"/>
 	<link href="http://localhost:8080/"/>
-	<updated>2023-07-21T00:00:00Z</updated>
+	<updated>2023-08-10T00:00:00Z</updated>
 	<id>http://localhost:8080/</id>
 	<author>
 		<name>Casey Newcombe</name>
 		<email>newco31@hotmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Basic Concept of Java Script Variables and Scope</title>
+		<link href="http://localhost:8080/blog/Sixthpost/sixthpost/"/>
+		<updated>2023-08-10T00:00:00Z</updated>
+		<id>http://localhost:8080/blog/Sixthpost/sixthpost/</id>
+		<content type="html">&lt;p&gt;Variables are one of the important theories in programming. It could even be said to be the most important. They are part of the fundamentals of any programming language. Without them, it would be difficult to perform manipulation, and computations. We would have no way of storing information, retrieving them and no track of values.&lt;/p&gt;
+&lt;p&gt;A variable is a storage location or a memory location that holds a data type and values. JavaScript variables are variables declared and assigned in JavaScript, following the JavaScript syntax, that holds values and datatypes.
+In this article, we will look at variables in JavaScript, the datatypes they hold, good naming and writing practices, how they are implemented and manipulated and their scope.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>HTML for Beginners</title>
