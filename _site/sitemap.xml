@@ -70,4 +70,9 @@
 		<loc>http://localhost:8080/contact/</loc>
 		<lastmod>2023-07-24</lastmod>
 	</url>
+	
+	<url>
+		<loc>http://localhost:8080/blog/Sixthpost/sixthpost/</loc>
+		<lastmod>2023-08-10</lastmod>
+	</url>
 </urlset>
