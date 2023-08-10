@@ -12,13 +12,18 @@
 	</author>
 	
 	<entry>
-		<title>Basic Concept of Java Script Variables and Scope</title>
+		<title>Basic Concept of Java Script Variables</title>
 		<link href="http://localhost:8080/blog/Sixthpost/sixthpost/"/>
 		<updated>2023-08-10T00:00:00Z</updated>
 		<id>http://localhost:8080/blog/Sixthpost/sixthpost/</id>
 		<content type="html">&lt;p&gt;Variables are one of the important theories in programming. It could even be said to be the most important. They are part of the fundamentals of any programming language. Without them, it would be difficult to perform manipulation, and computations. We would have no way of storing information, retrieving them and no track of values.&lt;/p&gt;
 &lt;p&gt;A variable is a storage location or a memory location that holds a data type and values. JavaScript variables are variables declared and assigned in JavaScript, following the JavaScript syntax, that holds values and datatypes.
 In this article, we will look at variables in JavaScript, the datatypes they hold, good naming and writing practices, how they are implemented and manipulated and their scope.&lt;/p&gt;
+&lt;h3 id=&quot;javascript-variable-declaration-initializing-and-assigning-variables&quot; tabindex=&quot;-1&quot;&gt;JavaScript variable declaration, Initializing and Assigning Variables &lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/blog/Sixthpost/sixthpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A variable is declared when it is created. In JavaScript, variables are declared using any of these three keywords - var, let and const.&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; website&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; address&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 </content>
 	</entry>
 	
