@@ -12,18 +12,40 @@
 	</author>
 	
 	<entry>
-		<title>Basic Concept of Java Script Variables</title>
-		<link href="http://localhost:8080/blog/Sixthpost/sixthpost/"/>
+		<title>Basic JS program to calculate a tip</title>
+		<link href="http://localhost:8080/blog/sixthpost/"/>
 		<updated>2023-08-10T00:00:00Z</updated>
-		<id>http://localhost:8080/blog/Sixthpost/sixthpost/</id>
-		<content type="html">&lt;p&gt;Variables are one of the important theories in programming. It could even be said to be the most important. They are part of the fundamentals of any programming language. Without them, it would be difficult to perform manipulation, and computations. We would have no way of storing information, retrieving them and no track of values.&lt;/p&gt;
+		<id>http://localhost:8080/blog/sixthpost/</id>
+		<content type="html">&lt;h3 id=&quot;introduction-to-javascript-variables&quot; tabindex=&quot;-1&quot;&gt;Introduction to JavaScript variables &lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/blog/sixthpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Variables are one of the important theories in programming. It could even be said to be the most important. They are part of the fundamentals of any programming language. Without them, it would be difficult to perform manipulation, and computations. We would have no way of storing information, retrieving them and no track of values.&lt;/p&gt;
 &lt;p&gt;A variable is a storage location or a memory location that holds a data type and values. JavaScript variables are variables declared and assigned in JavaScript, following the JavaScript syntax, that holds values and datatypes.
-In this article, we will look at variables in JavaScript, the datatypes they hold, good naming and writing practices, how they are implemented and manipulated and their scope.&lt;/p&gt;
-&lt;h3 id=&quot;javascript-variable-declaration-initializing-and-assigning-variables&quot; tabindex=&quot;-1&quot;&gt;JavaScript variable declaration, Initializing and Assigning Variables &lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/blog/Sixthpost/sixthpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;A variable is declared when it is created. In JavaScript, variables are declared using any of these three keywords - var, let and const.&lt;/p&gt;
-&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
-&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; website&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; address&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+In this article, we will look at variables in JavaScript and how they are implemented and manipulated to create a basic tip program.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;javascript-variable-declaration-initializing-and-assigning-variables&quot; tabindex=&quot;-1&quot;&gt;JavaScript variable declaration, Initializing and Assigning Variables &lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/blog/sixthpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt;A variable is declared when it is created. In JavaScript, variables are declared using any of these three keywords - var, let and const. In the code below you can see I&#39;ve declared a variable using the keyword const for pre-tip total and the tip percentage.&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; subtotal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30.83&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; tipPercent &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0.15&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Can be changed&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; billTip &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; subtotal &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; tipPercent&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; receipt &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Meal: &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;subtotal&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; Tip: &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;billTip&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+Total: &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;subtotal &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; billTip&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;receipt&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Part of the task was then to output a sentence to the page displaying the total bill including tip - To output a message to your page you can simply write the code below.&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Your total bill, with tip, is £35.45.&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;extend-the-tip-program&quot; tabindex=&quot;-1&quot;&gt;Extend the tip program &lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/blog/sixthpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt;Final part of the task was to use toFixed() to round the output to 2 decimal places and output a sentence for the tip amount. This can been seen in the code below.&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; $2DP &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;parseFloat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;subtotal &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; billTip&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toFixed&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;$2DP&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Your tip is £4.62.&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Please visit &lt;a href=&quot;https://codepen.io/Kcboyy/pen/XWyQezz&quot;&gt;this link&lt;/a&gt; to see the program in action.&lt;/p&gt;
+&lt;p&gt;Thanks for reading!&lt;/p&gt;
 </content>
 	</entry>
 	
