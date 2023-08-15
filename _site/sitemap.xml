@@ -80,4 +80,9 @@
 		<loc>http://localhost:8080/blog/seventhpost/</loc>
 		<lastmod>2023-08-11</lastmod>
 	</url>
+	
+	<url>
+		<loc>http://localhost:8080/blog/eighthpost/</loc>
+		<lastmod>2023-08-15</lastmod>
+	</url>
 </urlset>
