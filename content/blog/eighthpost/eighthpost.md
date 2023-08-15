@@ -1,16 +1,14 @@
 ---
 title: Function and Control Flow Practicals
-description: Assigned a task to create a program to calculate a tip percentage.
+description: Assigned a task to create a calculator which incorporated switch statements.
 date: 2023-08-15
 
 ---
-<br>
- Functions are separable, reusable pieces of code. 
-<br>
 
- ### Declaring Functions
 
- To declare a function you give it a name, then include all the code for the function inside curly brackets { }. To invoke (use) a function, you type its name, followed by parenthesis ( ). This can be seen on my code below.
+ ### Percentage Calculator
+
+In this blog I will demonstrate a basic program I created to calculate a percentage of any number. You can see in the code below I created two arguements, "inputNum" & "inputPercentage" the logical operator and the return statement. This will return the percentage of any number by changing the numbers in the console log syntax.  
 
 ```js
 const inputNumber = prompt(`Please enter a number`)
@@ -23,44 +21,77 @@ percentageCalculator = (inputNum, inputPercentage) => {
 }
 console.log(percentageCalculator(135, 30))
 ```
-A function is a group of code you can reuse many times. Whenever you invoke a function by using its name, you tell the browser to run the code inside the function. To return a value from a function, you must include a return statement, followed by the value to be returned, before the function's end statement. You can see this is my code below.
+<br>
+
+### Switch Statements
+
+The next part of my task was to implement a switch statement for a basic drinks ordering program. The switch statement evaluates an expression, the value of the expression is then compared with the values of each case in the structure. If there is a match, the associated block of code is executed. This can be seen in my code below. 
 
 ```js
-function secondFunc (firstName = `first`, secondName = `last`) {
-        return `${`Casey`} ${`Newcombe`}` 
-        // return `${firstName} ${secondName}`
-      } 
-      const result = secondFunc();
-      // const result = secondFunc('John', 'Smith');
-      console.log(result);
+const arrSize =[`small`, `medium`, `large`];
+const arrFlavour =[`cola`, `lemon`, `orange`];
+const inputSize = prompt(`Please enter a Size`)
+const inputFlavour = prompt(`Please enter a Flavour`)
+
+drinkOrder = (size, drink) => {
+  let drinkLabel;
+  
+  switch (drink) {
+    case `lemon`:
+      drinkLabel = `lemonade`;
+      break;
+      
+    case `orange`:
+      drinkLabel = `orangeade`;
+      break;
+       
+    case `cola`:
+      drinkLabel = `cola`;
+      break;
+      
+    default: small
+      drinkLabel = drink;
+      break;
+  }
+  
+  return `You have ordered a ${size} ${drinkLabel}.`;
+}
+
+console.log(drinkOrder(inputSize, inputFlavour));
 ``` 
 
 <br>
 
-### Control Flow & Logical Operators
-
-We use if statements to decide which lines of code to execute given a condition. We also use <u><b>else</b></u> to provide an alternate set of instructions. You can also use logical operators to combine conditions as seen in my code below.
+### Calculator
+The final part of the task was to create a function capable of using the addition, subtraction, multiply, divider and modulus operators on two numbers which i've demonstrated in my code below. This task also incorporated the use of a switch statement as discussed above, however this could potentially cause unnecessary and inefficient code dependant on the scale of the operators required and instead it would be of better use to use the eval() method for such task.     
 
 ```js
-let temperature = 45;
+ calculator = (number1, number2, operator) => {
+  let result
+  
+  switch(operator) {
+  case `+`:
+    result = number1 + number2
+    break;
+  case `-`:
+    result = number1 - number2
+    break;
+  case `/`:
+    result = number1 / number2
+    break;
+  case `*`:
+    result = number1 * number2
+    break;
+  case `%`:
+    result = number1 % number2
+    break;
+  }
+  
+  return result
+}
 
-    if (temperature <=50) {
-      console.log(`Put on a coat it is cold!`)
-    }
-
-      let temp = 30;
-      let doTheyOwnAHat = true;
-      
-      if (temp <= 0) {
-        console.log('stay inside.');
-      } else if (temp <= 30 && doTheyOwnAHat) {
-        console.log(`wear a coat and a hat.`);
-      } else if (temp <= 50) {
-        console.log('wear a coat.');
-      } else {
-        console.log('just pants and vest is fine.');
-      } 
+console.log(calculator(2,2, `+`))
 ```
-Please visit [this link](https://codepen.io/Kcboyy/pen/XWyLVRw) to see the program in action.
+Please visit [this link](https://codepen.io/Kcboyy/pen/NWEQMzX) to see the program in action.
 
 Thanks for reading!
